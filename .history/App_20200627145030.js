@@ -20,19 +20,6 @@ export default function App() {
                 fontSize: 16,
                 color: '#5A6067',
             }}>Enter Your Song Here!</Text>
-      <TextInput placeholder='your song'
-          style={{
-            paddingLeft: 10,
-            width: 300,
-            height: 40,
-            borderColor: '#ADB1B7',
-            borderWidth: 2,
-            borderRadius: 5,
-            fontFamily: 'montserrat',
-          }}
-          onChangeText={song => setSong(song)}
-          value={song}
-          />
         
     </View>
   );
