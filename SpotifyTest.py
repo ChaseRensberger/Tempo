@@ -12,10 +12,6 @@ client_credentials_manager = SpotifyClientCredentials(client_id = CLIENT_ID, cli
 
 spotify = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
 
-results = spotify.artist_top_tracks(artist_uri)
+results = spotify.audio_features(artist_uri)
 
-for track in results['tracks'][:10]:
-    print('track    : ' + track['name'])
-    print('audio    : ' + track['preview_url'])
-    print('cover art: ' + track['album']['images'][0]['url'])
-    print()
+print(results)
